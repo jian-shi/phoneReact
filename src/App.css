@@ -1,0 +1,177 @@
+.App {
+  text-align: center;
+}
+
+
+.choice h4{
+  color: #5f259f;
+}
+ul {
+  list-style: none;
+}
+label{
+  margin-left: 1rem;
+}
+
+.choice button:hover{
+  background-color: #1eb0ff;
+}
+.choice button{
+  margin: 1rem 0 0 0;
+  color: white;
+  background-color: #0096e6;
+  width: 10rem;
+  height: 3rem;
+}
+.choice {
+  text-align: left;
+}
+
+.option{
+  margin-left: 1rem;
+  border-left: 2px solid #5f259f;
+}
+
+span.container{
+  margin-left: 1rem;
+  display: block;
+}
+
+
+button#button-next, button#button-pre{
+  cursor: pointer;
+  position: absolute;
+  top: 30%;
+  width: auto;
+  background: transparent;
+  border: none;
+  font-size: 30px;
+  color: #0096e6;
+  outline: 0;
+}
+button#button-next:hover, button#button-pre:hover{
+  color: #1eb0ff;
+}
+
+button#button-pre{
+  left: 0;
+}
+
+button#button-next{
+  right: 0;
+}
+
+button.inactive{
+  color: #8eacbd !important;
+}
+
+.device-img{
+  display: block;
+}
+
+.summary{
+  margin-top: 2rem;
+}
+
+.summary .config{
+  padding-left: 2rem;
+  text-align: left;
+}
+
+.summary .config h6{
+  color: #5f259f;
+  font-weight: 600;
+  text-align: left;
+}
+
+.summary .price{
+  background-color: #e3e3e3;
+  padding: 2rem;
+  text-align: left;
+}
+
+span.title, span.cost {
+  display: inline-block;
+}
+
+span.cost {
+  float: right;
+}
+
+#summaryButton{
+  display: block;
+  text-align: center;
+  width: 100%;
+  background-color: #0096e6;
+  color:white;
+  height: 3rem;
+}
+#summaryButton:hover{
+  background-color: #1eb0ff;
+}
+
+.cost-device {
+  height: 3rem;
+}
+
+.option-container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.option-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  vertical-align: middle;
+}
+
+.checkmark {
+  position: absolute;
+  top: 5px;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.option-container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.option-container input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.option-container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.option-container .checkmark:after {
+  top: 2px;
+  left: 2px;
+  width: 21px;
+  height: 21px;
+  border-radius: 50%;
+  background: #2096f3;
+  border: 3px solid white;
+}
